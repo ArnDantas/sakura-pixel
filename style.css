@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(/image/sakura-room.gif) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Press Start 2P', cursive;
+  
+}
+
+#title {
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(233, 219, 221, 0.633);
+
+}
+
+#color-palette {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(233, 219, 221, 0.633);
+  
+}
+#pixel-board {
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  border-radius: 10px;
+  display: grid;
+}
+
+#button-random-color {
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+#clear-board {
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+#generate-board {
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+#board-size {
+  
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50px;
+ content: url(/image/Chave.png);
+
+}
+
+#pixel {
+display: flex;
+justify-content: center;
+}
+
+.color {
+  appearance: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+header {
+  display: flex;
+  /* justify-content: center; */
+  padding: 15px;
+  /* align-items: center; */
+  /* min-height: 100vh; */
+  --bg: #e5a1e1;
+  /* background-color: var(--bg); */
+  color: white;
+}
+
+.player {
+  width: 450px;
+  background-color: var(--bg);
+  display: grid;
+  grid-template-columns: 28px 1fr 28px;
+  grid-gap: 16px;
+  padding: 8px 24px;
+  position: relative;
+  border-radius: 64px;
+}
+
+.control,#current {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 16px;
+}
+
+#playbtn {
+  font-size: 24px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  cursor: pointer;
+}
+
+#playbtn:hover {
+  -webkit-text-fill-color: white;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+#current {
+  text-align: right;
+}
+
+.bar {
+  --space: -4px;
+  background-color: #24242424;
+  overflow: hidden;
+  left: var(--space);
+  right: var(--space);
+  top: var(--space);
+  bottom: var(--space);
+  position: absolute;
+  border-radius: 64px;
+  z-index: -2;
+}
+
+#progress {
+  display: blcok;
+  width: var(--progress,0%);
+  background-color: white;
+  transition: all 1s linear;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.color {
+  /* font-size: 20px; */
+  cursor: pointer;
+}
+/*------ Style 2 ------*/
+.color {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border: none;
+  cursor: pointer;
+}
+.color::-webkit-color-swatch {
+  border-radius: 50%;
+  border: 7px solid #000000;
+}
+.color::-moz-color-swatch {
+  border-radius: 50%;
+  border: 7px solid #000000;
+}
+#magia {
+  width: 75px;
+  height: 75px;
+}
